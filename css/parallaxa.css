@@ -1,0 +1,212 @@
+body {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.slider, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    position: relative;
+    /*opacity: 0.65;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../images/ucl2.jpg");
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.bgimg-2 {
+    background-image: url("../images/rvp.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("../images/ucl3.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("../images/rvs.jpg");
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    background-image: url("../images/rmvam.jpg");
+    min-height: 400px;
+}
+
+.bgimg-6 {
+    background-image: url("../images/uclimg5.jpg");
+    min-height: 400px;
+}
+
+.slider {
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    display: none;
+}
+
+#caption1 {
+    position: absolute;
+    left: 0;
+    top: 72%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    display: none;
+}
+
+.captionRotation {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 4s;
+    /* Safari */
+    transition: width 2s, height 2s, transform 4s;
+    -webkit-transform: rotate(360deg);
+    /* Safari */
+    transform: rotate(360deg);
+}
+
+.caption span.border {
+    background-color: #E91E63;
+    color: #FF9800;
+    padding: 18px;
+    font-size: 24px;
+    letter-spacing: 7px;
+    font-family: 'Lobster', cursive;
+    display: none;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #FF9800;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    position: relative;
+}
+
+.header {
+    background-color: #009688;
+    text-align: center;
+    padding: 16px 80px;
+    text-align: justify;
+    font-style: oblique;
+    position: relative;
+}
+
+.border {
+    background-color: transparent;
+    font-size: 25px;
+    color: #f7f7f7;
+}
+
+.description {
+    color: #FFEB3B;
+    background-color: #005796;
+    text-align: center;
+    padding: 33px 80px;
+    font-family: Shrikhand;
+    font-size: 29px;
+}
+
+.description2 {
+    color: #FFC107;
+    background-color: #3F51B5;
+    text-align: center;
+    padding: 33px 80px;
+    font-family: 'Shrikhand';
+    font-size: 29px;
+    display: none;
+}
+
+.description3 {
+    color: #FFC107;
+    background-color: #3F51B5;
+    text-align: center;
+    padding: 33px 80px;
+    font-family: 'Shrikhand';
+    font-size: 29px;
+}
+
+#img1 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#img2 {
+    width: 49%;
+    height: 100%;
+    margin-left: -4px;
+    top: 1px;
+    position: relative;
+}
+
+#img3 {
+    width: 4%;
+    position: absolute;
+    top: 468px;
+    margin-left: 61%;
+    display: none;
+}
+
+#img4 {
+    width: 10%;
+    position: absolute;
+    top: 324px;
+    margin-left: 924px;
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+#overlay img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Applying media query for responsive page*/
+
+@media only screen and (min-width: 732px) {
+    /* For tablet */
+    .caption span.border {
+        font-size: 18px;
+    }
+    #caption4 {
+        font-size: 16px;
+    }
+}
